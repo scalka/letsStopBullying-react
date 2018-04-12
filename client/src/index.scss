@@ -1,0 +1,70 @@
+@import 'bulma/bulma';
+
+$peach: #FFAC98;
+$navy: #3F527D;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.menu {
+  background: $peach;
+}
+span.navbar-item {
+  color: $navy;
+  font-weight: bold;
+}
+span.navbar-item:hover {
+  color: #363636;
+  font-weight: bold;
+}
+a {
+  color: $navy;
+}
+
+.tag {
+  margin-right: 2px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 50px;
+}
+
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.item-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.item-details-li {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.125);
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
