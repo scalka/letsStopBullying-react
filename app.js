@@ -24,3 +24,17 @@ MongoClient.connect(url, (err, database) => {
     console.log('Well done, now I am listening on ', server.address().port);
   });
 });
+
+
+// ROUTING
+app.get('/modulesCollection', (req, res) => {
+  // find entries in the database, sort it on score and limit to first six
+  // find returns cursor so we need to use toArray method
+  db.collection('modules').find().toArray((err, result) => {
+    console.log(result);
+    if (err) return console.log(err);
+    // send result to the client
+    //console.log(result);
+    res.send(result);
+  });
+});

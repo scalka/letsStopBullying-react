@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import {BrowserRouter, Route} from 'react-router-dom';
 import { BigButton } from './Components/BigButton';
+import Home from './Components/Home';
 
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
+        <div className="App">
 
-      <BigButton moduleName={"Name"} image={`../../pictures/Anger.png`} />
+          <Route exact path='/' component={Home}/>
 
+
+        </div>
+      </BrowserRouter>
     );
   }
 }
