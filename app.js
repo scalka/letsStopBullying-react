@@ -38,3 +38,16 @@ app.get('/modulesCollection', (req, res) => {
     res.send(result);
   });
 });
+
+//get module data
+app.get('/bullying', (req, res) => {
+  // find entries in the database, sort it on score and limit to first six
+  // find returns cursor so we need to use toArray method
+  db.collection('bullying').find().toArray((err, result) => {
+    console.log(result);
+    if (err) return console.log(err);
+    // send result to the client
+    //console.log(result);
+    res.send(result);
+  });
+});

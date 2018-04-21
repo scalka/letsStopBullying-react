@@ -1,51 +1,52 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {BigButton} from './BigButton';
+import {BigButton} from '../BigButton';
 
-class Home extends Component {
+class WhatIsMain extends Component {
   constructor() {
     super();
     this.state = {
-      modulesData: []
+      bullyingData: []
     };
   }
-
   componentWillMount() {
-    fetch('modulesCollection')
+    fetch('bullying')
       .then(res => {
         if(res.ok) return res.json();
       })
       .then(data => {
         this.setState({
-          modulesData: data
+          bullyingData: data
         });
       })
       .catch(error => console.log(error));
   }
 
   render() {
-    const moduleButtons = this.state.modulesData.map( module => {
+    console.log(this.state.bullyingData);
+    let topicButtons = this.state.bullyingData.map( topic => {
       return (
         <div className="column is-half">
           <Link to={{
-            pathname: `/${module.url}`,
-            state: module
+            pathname: `/${topic.url}`,
+            state: topic
           }}>
-            <BigButton moduleName={ module.moduleName } image={ window.location.origin + `/pictures/${module.imagePath}`} />
+            <BigButton moduleName={ topic.title } image={ window.location.origin + `/pictures/${topic.imagePath}`} />
           </Link>
         </div>
       );
     });
 
+
+
     return (
       <section className="section">
-        <div className="columns is-multiline">
-          {moduleButtons}
+        <div className="columns is-multiline is-6">
+          {topicButtons}
         </div>
       </section>
-
     );
   }
 }
 
-export default Home;
+export default WhatIsMain;

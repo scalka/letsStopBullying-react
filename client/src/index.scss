@@ -2,20 +2,17 @@
 
 $peach: #FFAC98;
 $navy: #3F527D;
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+$safeBlue: #008bcc;
 
 .menu {
   background: $peach;
 }
+
 span.navbar-item {
   color: $navy;
   font-weight: bold;
 }
+
 span.navbar-item:hover {
   color: #363636;
   font-weight: bold;
@@ -24,19 +21,15 @@ a {
   color: $navy;
 }
 
-.tag {
-  margin-right: 2px;
-}
-
 .App {
   text-align: center;
+  background-color: $safeBlue;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 50px;
 }
-
 
 .App-title {
   font-size: 1.5em;
@@ -46,25 +39,51 @@ a {
   font-size: large;
 }
 
-.item-details {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
+.bigButton {
+  width: 47%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.menuImage{
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
 }
 
-.item-details-li {
+
+html,
+body,
+.container {
   position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  padding: 0.75rem 1.25rem;
-  margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid rgba(0,0,0,0.125);
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.navbar-item img {
+  max-height: 3.5rem;
 }
+
+.card-content{
+  border: 1px solid #0a3c59;
+  border-radius: 9px;
+  color: #008bcc;
+  font-size: 30px;
+  font-family: helvetica, serif;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.card {
+  border-radius: 25px;
+}
+.card .card-content {
+  border-radius: 0 0 25px 25px;
+}
+.card .card-image img {
+  border-radius: 25px 25px 0 0;
+}
+
