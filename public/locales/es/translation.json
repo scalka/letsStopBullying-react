@@ -5,9 +5,31 @@
   },
   "appName": "Spanish Let stop bullying",
   "nav" : {
-    "linkEN": "work",
-    "linkES": "errere",
-    "link2": "dsfsdf"
+    "linkEN": "Inglés",
+    "linkES": "Español"
   },
-  "hello": "hola"
+  "hello": "hola",
+  "modules": {
+    "What is bullying": "SP What is not bullying",
+    "Safety Settings": "SP Safety Settings",
+    "Cyberbullying":  "SP Cyberbullying",
+    "What should I do?": "SP What should I do?",
+    "Choice and Control": "SP Choice and Control",
+    "Strangers and Friends": "SP Strangers and Friends",
+    "What is not bullying": "SP What is not bullying",
+    "Exclusion": "SP Exclusion",
+    "Anger": "SP Anger"
+  },
+  "smallButtons": {
+    "definition": "SP Definition",
+    "types": "SP Types",
+    "signs": "SP Signs",
+    "physical": "SP Physical",
+    "verbal": "SP Verbal",
+    "social": "SP Social"
+  },
+  "video": {
+    "definition": "SP Definition",
+    "physical": "SP Physical Bullying"
+  }
 }

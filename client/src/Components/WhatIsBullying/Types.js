@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {SmallButton} from '../SmallButton';
-import {DefinitionVideo} from '../DefinitionVideo';
+import SmallButton from '../SmallButton';
+import DefinitionVideo from '../DefinitionVideo';
 import {Verbal} from './Verbal';
 
 export class Types extends Component {

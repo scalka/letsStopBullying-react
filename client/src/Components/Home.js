@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {BigButton} from './BigButton';
+import BigButton from './BigButton';
 
 class Home extends Component {
   constructor() {
@@ -40,7 +40,6 @@ class Home extends Component {
     return (
       <section className="section">
         <div className="columns is-multiline">
-          <p>s</p>
           {moduleButtons}
         </div>
       </section>

@@ -22,6 +22,10 @@ i18n
     // here it removes the letter a from the json (bad idea)
     parse: function(data) { return data.replace(/a/g, ''); },
 
+    // have a common namespace used around the full app
+    ns: ["translation"],
+    defaultNS: "translation",
+
     fallbackLng: 'en',
     debug: true,
 

@@ -1,7 +1,9 @@
 import React from 'react';
+import { translate } from 'react-i18next';
 
-export const BigButton = (props) => {
+const BigButton = (props) => {
   console.log(props);
+  const { t, i18n } = props;
   return(
     <div className="card bigButton">
       <div className="card-image">
@@ -10,9 +12,10 @@ export const BigButton = (props) => {
         </figure>
       </div>
       <div className="card-content">
-        <p className="title is-size-6">{props.moduleName}</p>
+        <p className="title is-size-6">{t('bigButtons.' + props.moduleName)}</p>
       </div>
     </div>
   );
 };
 
+export default translate("translation")(BigButton);

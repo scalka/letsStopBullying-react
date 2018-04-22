@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {SmallButton} from '../SmallButton';
-import {DefinitionVideo} from '../DefinitionVideo';
+import SmallButton from '../SmallButton';
+import DefinitionVideo from '../DefinitionVideo';
 import {Types} from './Types';
 
 class BullyingMain extends Component {

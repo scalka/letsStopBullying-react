@@ -1,6 +1,9 @@
 import React from 'react';
+import { translate } from 'react-i18next';
 
-export const SmallButton = (props) => {
+const SmallButton = (props) => {
+  const { t, i18n } = props;
+
   let imagePath = null;
   if (props.title === 'definition') {
     imagePath = 'definition.png';
@@ -18,8 +21,10 @@ export const SmallButton = (props) => {
         </figure>
       </div>
       <div className="">
-        <p className="title">{props.title}</p>
+        <p className="title">{t('smallButtons.' + props.title)}</p>
       </div>
     </div>
   );
 };
+
+export default translate("translation")(SmallButton);

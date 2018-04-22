@@ -1,4 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import { translate, Trans } from "react-i18next";
 import {BrowserRouter, Route} from 'react-router-dom';
 import Home from './Components/Home';
 import WhatIsMain from './Components/WhatIsBullying/WhatIsBullyingMain';
@@ -10,41 +12,29 @@ import i18n from './i18n'; // initialized i18next instance using reactI18nextMod
 
 class App extends Component {
   render() {
+    const { t, i18n } = this.props;
+
+    const changeLanguage = lng => {
+      i18n.changeLanguage(lng);
+    };
+
     return (
       <BrowserRouter>
         <div className="App">
-          <I18n>
-            {
-              (t, { i18n }) => (
-                <div>
-                  <h1>{t('appName')}</h1>
-                  <button
-                    onClick={() => { i18n.changeLanguage('es'); }}>{t('nav.linkES')}
-                  </button>
-                  <button
-                    onClick={() => { i18n.changeLanguage('en'); }}>{t('nav.linkEN')}
-                  </button>
-                  <a
-                    href='https://github.com/i18next/react-i18next'
-                    target='_blank'
-                  >
-                  </a>
-                  <Menu/>
-                  <Route exact path='/' component={Home}/>
-                  <Route path='/what-is-bullying' component={WhatIsMain}/>
-                  <Route path='/bullying-main' component={BullyingMain}/>
-                </div>
-              )
-            }
-          </I18n>
-
-
-
-
+          <div className="App-header">
+            <h2>{t('appName')}</h2>
+            <button onClick={() => changeLanguage("es")}>{t('nav.linkES')}</button>
+            <button onClick={() => changeLanguage("en")}>{t('nav.linkEN')}</button>
+            <Menu/>
+          </div>
+          <Route exact path='/' component={Home}/>
+          <Route path='/what-is-bullying' component={WhatIsMain}/>
+          <Route path='/bullying-main' component={BullyingMain}/>
         </div>
       </BrowserRouter>
     );
   }
 }
 
-export default App;
+// extended main view with translate hoc
+export default translate("translation")(App);

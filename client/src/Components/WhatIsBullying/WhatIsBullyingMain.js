@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {BigButton} from '../BigButton';
+import BigButton from '../BigButton';
 
 class WhatIsMain extends Component {
   constructor() {

@@ -5,9 +5,36 @@
   },
   "appName": "Let stop bullying",
   "nav" : {
-    "linkEN": "work",
-    "link1": "errere",
-    "link2": "dsfsdf"
+    "linkEN": "English",
+    "linkES": "Spanish"
   },
-  "hello": "hi"
+  "hello": "hi",
+  "translations": {
+    "To get started, edit <1>src/App.js</1> and save to reload.":
+    "To get started, edit <1>src/App.js</1> and save to reload.",
+    "Welcome to React": "Welcome to React and react-i18next"
+  },
+  "bigButtons": {
+    "What is bullying": "What is not bullying",
+    "Safety Settings": "Safety Settings",
+    "Cyberbullying": "Cyberbullying",
+    "What should I do?": "What should I do?",
+    "Choice and Control": "Choice and Control",
+    "Strangers and Friends": "Strangers and Friends",
+    "What is not bullying": "What is not bullying",
+    "Exclusion": "Exclusion",
+    "Anger": "Anger"
+  },
+  "smallButtons": {
+    "definition": "Definition",
+    "types": "Types",
+    "signs": "Signs",
+    "physical": "Physical",
+    "verbal": "Verbal",
+    "social": "Social"
+  },
+  "video": {
+    "definition": "Definition",
+    "physical": "Physical Bullying"
+  }
 }
