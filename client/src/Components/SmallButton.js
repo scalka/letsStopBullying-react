@@ -14,16 +14,20 @@ const SmallButton = (props) => {
   }
 
   return(
-    <div className="level-item">
-      <div className="">
-        <figure className="image">
-          <img className="menuImage" onClick={props.changeActiveElement} src={ imagePath !== null ? window.location.origin + `/pictures/${imagePath}` : window.location.origin + `/pictures/${props.imagePath}` } alt={props.title}/>
-        </figure>
-      </div>
-      <div className="">
-        <p className="title">{t('smallButtons.' + props.title)}</p>
-      </div>
+
+    <div class="tile is-parent">
+      <article class="tile is-child box is-success">
+        <div class="content">
+          <figure className="image is-128x128">
+            <img className="" onClick={props.changeActiveElement} src={ imagePath !== null ? window.location.origin + `/pictures/${imagePath}` : window.location.origin + `/pictures/${props.imagePath}` } alt={props.title}/>
+          </figure>
+        </div>
+        <div class="content">
+          <p className="title tile is-child">{t('smallButtons.' + props.title)}</p>
+        </div>
+      </article>
     </div>
+
   );
 };
 

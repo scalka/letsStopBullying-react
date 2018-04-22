@@ -6504,6 +6504,9 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
+button {
+  margin: 15px; }
+
 span.navbar-item {
   color: #3F527D;
   font-weight: bold; }

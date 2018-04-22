@@ -28,8 +28,8 @@ export class Types extends Component {
     });
     console.log(this.state.active);
     return(
-      <div>
-        { this.state.active === 'types' ? <div className="level"> {typesButtons}  </div> : null}
+      <div className="columns is-centered">
+        { this.state.active === 'types' ? <div className="columns is-centered"> {typesButtons}  </div> : null}
 
         { this.state.active === 'physical' ? <DefinitionVideo active={this.state.active} videoSrc={this.props.types[0].definition}/> : null}
 

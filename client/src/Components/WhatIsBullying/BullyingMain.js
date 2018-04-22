@@ -40,13 +40,13 @@ class BullyingMain extends Component {
 
     return (
       <section className="section">
+        <div className="container">
+          {this.state.active === 'buttons' ? <div className="columns is-centered"><div className="columns is-centered">{smallButtons}</div></div> : null}
 
-        {this.state.active === 'buttons' ? <div className="level">{smallButtons}</div> : null}
+          {this.state.active === 'definition' ? <DefinitionVideo active={this.state.active} videoSrc={this.state.data.definition}/> : null}
 
-        {this.state.active === 'definition' ? <DefinitionVideo active={this.state.active} videoSrc={this.state.data.definition}/> : null}
-
-        {this.state.active === 'types' ? <Types active={this.state.active} types={this.state.data.types}/> : null}
-
+          {this.state.active === 'types' ? <Types active={this.state.active} types={this.state.data.types}/> : null}
+        </div>
       </section>
 
     );
