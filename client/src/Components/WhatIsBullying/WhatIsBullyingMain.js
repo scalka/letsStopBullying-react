@@ -41,8 +41,10 @@ class WhatIsMain extends Component {
 
     return (
       <section className="section">
-        <div className="columns is-multiline is-6">
-          {topicButtons}
+        <div className="container">
+          <div className="columns is-multiline is-6">
+            {topicButtons}
+          </div>
         </div>
       </section>
     );

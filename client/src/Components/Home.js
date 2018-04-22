@@ -39,8 +39,10 @@ class Home extends Component {
 
     return (
       <section className="section">
-        <div className="columns is-multiline">
-          {moduleButtons}
+        <div className="container">
+          <div className="columns is-multiline">
+            {moduleButtons}
+          </div>
         </div>
       </section>
 

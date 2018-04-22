@@ -1,8 +1,8 @@
 import React from 'react';
-import { translate } from 'react-i18next';
+import {translate} from 'react-i18next';
 
 const BigButton = (props) => {
-  console.log(props);
+  //console.log(props);
   const { t, i18n } = props;
   return(
     <div className="card bigButton">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { translate } from 'react-i18next';
+import {translate} from 'react-i18next';
 
 const SmallButton = (props) => {
   const { t, i18n } = props;

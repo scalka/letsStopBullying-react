@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import SmallButton from '../SmallButton';
-import DefinitionVideo from '../DefinitionVideo';
 
 export class Verbal extends Component {
   constructor() {
