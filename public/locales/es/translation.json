@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "appName": "Spanish Let stop bullying",
+  "nav" : {
+    "linkEN": "work",
+    "linkES": "errere",
+    "link2": "dsfsdf"
+  },
+  "hello": "hola"
+}

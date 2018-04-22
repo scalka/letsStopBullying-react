@@ -40,6 +40,7 @@ class Home extends Component {
     return (
       <section className="section">
         <div className="columns is-multiline">
+          <p>s</p>
           {moduleButtons}
         </div>
       </section>
